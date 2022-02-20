@@ -23,6 +23,7 @@ app.get("/health", async (req, res) => {
 
 let port = CONFIG.port || process.env.PORT;
 app.use("/services/search", routes);
+
 app.listen(port, () => {
   console.log("Server up on " + port);
 });
